@@ -6,13 +6,13 @@ require './runner/main.rb'
 # @token = []
 # puts "-------------start--------"
 # puts "-------------data---------"
-print "chomp: "
-p @chomp
+# print "chomp: "
+# p @chomp
 # puts "-------------lexer--------"
 @token = Lexer.new(@chomp).run
 # puts "-------------data---------"
-print "token: "
-p @token
+# print "token: "
+# p @token
 # puts "-------------runer--------"
 Runner.new(@token).run(0,@token.size)
 # puts "-------------finish-------"
