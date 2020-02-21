@@ -1,2 +1,0 @@
-a = "aiueo"
-print a
