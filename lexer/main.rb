@@ -9,7 +9,8 @@ class Lexer
 		@list_type  = [
 			[/\d+/,"INTEGER"],
 			[/".+"/,"STRING"],
-			[/\w+/,"VAR"]
+			[/\w+/,"VAR"],
+			[/date/,"DATE"]
 		]
 		@chomp      = chm
 		@token      = []
