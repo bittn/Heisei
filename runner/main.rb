@@ -1,3 +1,4 @@
+require 'date'
 class Runner
 	def initialize(tkn)
 		@token = tkn
@@ -92,8 +93,8 @@ class Runner
 
 	def getVar(c)
 		case c
-		when "PktAnl_new"
-				return eval(`cat ~/.pinenut/.pa_text.txt`)
+		when "date"
+				return Time.now.to_s
 		when /"(.+)"/
 			return $1.gsub("\\n","\n")
 		when /[0-9\.]+/
